@@ -2,6 +2,10 @@
   "name": "elemes_id",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name" : "Saepul Malik",
+    "email" : "saepulalmalik@gamil.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
