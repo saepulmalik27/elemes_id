@@ -1,0 +1,23 @@
+import { TNavbarList } from '@/libs/types'
+import Link from 'next/link'
+import React from 'react'
+
+type NavbarProps = {
+    lists : TNavbarList
+}
+
+const Navbar : React.FC<NavbarProps> = ({lists}) => {
+  return (
+    <nav>
+        {
+            lists.map(({label, href}, index) => (
+                <div key={index}>
+                    <Link href={href}> {label} </Link>
+                </div>
+            ))
+        }
+    </nav>
+  )
+}
+
+export default Navbar

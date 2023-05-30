@@ -1,0 +1,49 @@
+{
+    "header":{
+        "navbar" : {
+            "home" : "Home",
+            "about" : "About",
+            "contact" : "Contact Us",
+            "blogs" : "Blogs",
+            "promotion" : "Promotion"
+        },
+        "auth" : {
+            "signin" : "Masuk",
+            "signup" : "Daftar Sekarang"
+        }
+    },
+    "hero" : {
+        "title" : "Good Food Us Good Mood",
+        "description" : "I would think that conserving our natural resources should be a conservative position: Not to waste food, and not to throw away a lot of the food that we buy.",
+        "actions" : {
+            "signup" : "Daftar Sekarang",
+            "about" : "About us"
+        }
+    },
+    "category" : {
+        "title" : "Browser Our Category Receipt",
+        "actions" : {
+            "prev" : "Prev",
+            "next" : "Next"
+        }
+    },
+    "trending" : {
+        "title" : "Browser Our Trending Receipt",
+        "actions" : {
+            "viewAll" : "All Receipt"
+        }
+    },
+    "footer" : {
+        "contact" : {
+            "address" : "Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950"
+        },
+        "newsletter" : {
+            "description" : "Get now free 50% discount for alll products on your first order",
+            "actions" : {
+                "placeholder" : "Enter your email address",
+                "label" : "SEND"
+            }
+        }
+    },
+    "copyrigth" : "© 2021 Elemes id. All rights reserved"
+}
