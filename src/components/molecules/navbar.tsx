@@ -8,11 +8,11 @@ type NavbarProps = {
 
 const Navbar : React.FC<NavbarProps> = ({lists}) => {
   return (
-    <nav>
+    <nav className='hidden md:flex md:gap-3'>
         {
             lists.map(({label, href}, index) => (
                 <div key={index}>
-                    <Link href={href}> {label} </Link>
+                    <Link href={href} className='font-medium text-sm'> {label} </Link>
                 </div>
             ))
         }

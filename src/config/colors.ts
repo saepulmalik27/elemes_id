@@ -22,7 +22,8 @@ const colors = {
     'limegreen' : {
         light : "#F3F7D9",
         DEFAULT : "#A4B441",
-    }
+    },
+    stroke : "#f2f2f2"
 
 }
 

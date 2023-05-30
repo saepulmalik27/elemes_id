@@ -21,14 +21,14 @@
         }
     },
     "category" : {
-        "title" : "Browser Our Category Receipt",
+        "title" : "Browser Our Category",
         "actions" : {
             "prev" : "Prev",
             "next" : "Next"
         }
     },
     "trending" : {
-        "title" : "Browser Our Trending Receipt",
+        "title" : "Browser Our Trending",
         "actions" : {
             "viewAll" : "All Receipt"
         }
