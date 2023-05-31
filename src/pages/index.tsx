@@ -9,7 +9,8 @@ import React from "react";
 export default function Home() {
   return (
     <React.Fragment>
-      <Header />
+      <Header/>
+      <title>Home</title>
       <main className="flex-auto" >
           <Hero/>
           <SectionCategory/>

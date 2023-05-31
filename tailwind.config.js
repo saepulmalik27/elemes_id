@@ -21,6 +21,10 @@ module.exports = {
       },
       flex : {
         50 : '1 1 50%',
+      },
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(250px, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(250px, 1fr))',
       }
     },
   },
@@ -50,6 +54,11 @@ module.exports = {
             "font-size": "24px",
             "font-weight": "500",
             "line-height": "24px",
+          },
+          ".text-title-1xl":{
+            "font-size": "26px",
+            "font-weight": "500",
+            "line-height": "50px",
           }
 
         })
