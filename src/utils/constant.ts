@@ -28,30 +28,32 @@ export const FOODCATEGORYLIST : Array<TFoodCategory> = [
         title: "Cupcake",
         description: "22 items",
         imageUrl : "/assets/icons/custome/cupcake_icon.png",
-        className : "bg-olivegreen-light"
+        color : "olivegreen"
     },
     {
         title: "Pizza",
         description: "25 items",
         imageUrl : "/assets/icons/custome/pizza_icon.png",
-        className : "bg-tealblue-light"
+        color : "tealblue"
     },
     {
         title: "Kebab",
         description: "12 items",
         imageUrl : "/assets/icons/custome/kebab_icon.png",
-        className : "bg-royalblue-light"
+        color : "royalblue"
     },
     {
         title: "Salmon",
         description: "22 items",
         imageUrl : "/assets/icons/custome/salmon_icon.png",
-        className : "bg-deepmagenta-light"
+        color : "deepmagenta"
     },
     {
         title: "Doughnut",
         description: "11 items",
         imageUrl : "/assets/icons/custome/doughnut_icon.png",
-        className : "bg-limegreen-light"
+        color : "limegreen"
     },
 ]
+
+export const FOODREVIEWLIST = []

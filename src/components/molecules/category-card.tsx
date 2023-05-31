@@ -8,10 +8,10 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   imageUrl,
   title,
   description,
-  className
+  color
 }) => {
   return (
-    <div className={getRenderedClassNames(className)}>
+    <div className={getRenderedClassNames(color)}>
       <Image src={imageUrl} width={47} height={47} alt={title} />
       <div className="flex flex-col gap-1">
         <p className="font-medium">{title}</p>
@@ -21,9 +21,22 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   );
 };
 
-const getRenderedClassNames = (className: string) => {
+const getRenderedClassNames = (color: string) => {
   const defaultClass = 'w-[230px] h-[173px] transition-all hover:h-[230px] rounded-lg flex flex-col gap-4 justify-center items-center'
-  return cx(className, defaultClass)  
+ switch (color) {
+  case "olivegreen":
+    return cx('bg-olivegreen-light', defaultClass) 
+  case "tealblue" :
+    return cx('bg-tealblue-light', defaultClass)
+  case "royalblue":
+    return cx('bg-royalblue-light', defaultClass)
+  case "deepmagenta":
+    return cx('bg-deepmagenta-light', defaultClass)
+  case "limegreen":
+    return cx('bg-limegreen-light', defaultClass)
+  default:
+    return defaultClass
+ }
 }
 
 export default CategoryCard;

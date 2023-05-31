@@ -7,5 +7,5 @@ export type TFoodCategory = {
     title : string
     description : string
     imageUrl : string
-    className : string
+    color : string
 }
