@@ -4,8 +4,8 @@ import debounce from 'lodash/debounce'
 const useCarousel = () => {
     const carouselRef = useRef<HTMLDivElement>(null)
     const [scrollLeft, setScrollLeft] = useState(0)
-    const [showLeftArrow, setShowLeftArrow] = useState(false)
-    const [showRightArrow, setShowRightArrow] = useState(false)
+    const [showLeftArrow, setShowLeftArrow] = useState(true)
+    const [showRightArrow, setShowRightArrow] = useState(true)
 
     useEffect(() => {
         const handleResize = debounce(() => {

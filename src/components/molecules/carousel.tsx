@@ -1,6 +1,7 @@
 import useCarousel from "@/hooks/useCarousel";
 import React from "react";
 import SVG from "react-inlinesvg";
+import cx from "classnames";
 type CarouselProps = {
   children: React.ReactNode;
 };
@@ -14,9 +15,9 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
     scrollHandler,
   } = useCarousel();
   return (
-    <div className="relative overflow-hidden flex flex-col gap-7">
+    <div className="relative overflow-hidden gap-1 flex flex-col">
       <div
-        className="flex overflow-x-auto overflow-y-hidden gap-[10px]"
+        className="flex overflow-x-auto overflow-y-hidden gap-[10px] min-h-[230px]"
         ref={carouselRef}
         onScroll={handleScroll}
       >
@@ -25,30 +26,34 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
         ))}
       </div>
       <div className="hidden md:flex md:gap-4 md:justify-end md:px-[120px]">
-        {showLeftArrow && (
-          <button className="rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center"  onClick={() => {
+        <button
+          className={cx(
+            "rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center",
+            showLeftArrow ? "visible" : "invisible"
+          )}
+          onClick={() => {
             scrollHandler(-1);
-          }}>
-            <div className="rounded-full p-1 bg-white w-8 h-8 flex items-center justify-center">
-              <SVG src="/assets/icons/flat/chevron.svg" />
-            </div>
-            Prev
-          </button>
-        )}
-
-        {showRightArrow && (
-          <button
-            className="rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center"
-            onClick={() => {
-              scrollHandler(1);
-            }}
-          >
-            Next
-            <div className="rounded-full rotate-180 p-1 bg-white w-8 h-8 flex items-center justify-center">
-              <SVG src="/assets/icons/flat/chevron.svg" />
-            </div>
-          </button>
-        )}
+          }}
+        >
+          <div className="rounded-full p-1 bg-white w-8 h-8 flex items-center justify-center">
+            <SVG src="/assets/icons/flat/chevron.svg" />
+          </div>
+          Prev
+        </button>
+        <button
+          className={cx(
+            "rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center ",
+            showRightArrow ? "visible" : "invisible"
+          )}
+          onClick={() => {
+            scrollHandler(1);
+          }}
+        >
+          Next
+          <div className="rounded-full rotate-180 p-1 bg-white w-8 h-8 flex items-center justify-center">
+            <SVG src="/assets/icons/flat/chevron.svg" />
+          </div>
+        </button>
       </div>
     </div>
   );
