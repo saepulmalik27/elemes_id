@@ -36,7 +36,7 @@ const Hero = () => {
             alt="illustartion"
             className="flex-shrink-0 aspect-square flex-50"
           /> */}
-          <div className="flex-shrink-0 flex-50">
+          <div className="flex-shrink-0 flex-50 overflow-hidden">
             <div className="w-full flex justify-start items-center sm:justify-center aspect-square p-5 sm:p-10 ">
               <div className="rounded-full w-fit h-fit bg-stroke p-5 sm:p-10 relative ">
                 <Image
