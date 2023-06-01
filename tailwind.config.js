@@ -63,6 +63,11 @@ module.exports = {
             "font-size": "26px",
             "font-weight": "500",
             "line-height": "50px",
+          },
+          ".card-shadow" : {
+            "box-shadow" : "0px 11px 39px rgba(0, 0, 0, 0.07)",
+            "background" : "rgba(255, 255, 255, 0.74)",
+            "backdrop-filter": "blur(5.5px)"
           }
 
         })

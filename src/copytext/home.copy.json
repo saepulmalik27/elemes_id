@@ -18,6 +18,11 @@
         "actions" : {
             "signup" : "Daftar Sekarang",
             "about" : "About us"
+        },
+        "card" : {
+            "title" : "Green Salad Tomato",
+            "description" : "Tomato",
+            "rate" : 4
         }
     },
     "category" : {
