@@ -37,18 +37,23 @@ const Hero = () => {
             className="flex-shrink-0 aspect-square flex-50"
           /> */}
           <div className="flex-shrink-0 flex-50">
-            <div className="w-full flex justify-start items-center sm:justify-center aspect-square p-5 sm:p-10 relative">
-              <div className="rounded-full w-fit h-fit bg-stroke p-5 sm:p-10 ">
+            <div className="w-full flex justify-start items-center sm:justify-center aspect-square p-5 sm:p-10 ">
+              <div className="rounded-full w-fit h-fit bg-stroke p-5 sm:p-10 relative ">
                 <Image
                   src={"/assets/images/hero/hero_asset.png"}
-                  className="w-[230px] h-auto sm:w-full "
+                  className="w-[230px] h-auto sm:w-[414px] "
                   alt="hero-asset"
                   width={414}
                   height={416}
                 />
-              </div>
-              <div className="absolute right-5 sm:left-0 bottom-10 w-fit h-fit ">
-                <FoodProfileCard image="/assets/images/hero/hero_asset.png" title={copytext.hero.card.title} description={copytext.hero.card.description} rate={copytext.hero.card.rate} />
+                <div className="absolute left-[50%] sm:left-0 bottom-0 w-fit h-fit ">
+                  <FoodProfileCard
+                    image="/assets/images/hero/hero_asset.png"
+                    title={copytext.hero.card.title}
+                    description={copytext.hero.card.description}
+                    rate={copytext.hero.card.rate}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -59,4 +64,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
