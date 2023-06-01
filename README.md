@@ -5,23 +5,30 @@ Project ini diperuntukan untuk test frontend id Elemes.id
 
 
 ## Tools
-project ini menggunakan : 
-1. nextjs 
-2. react 
-3. typescript
-4. tailwindcss
+|No| Tools | Documentation |
+|---| --- | --- |
+|1| Nextjs | https://nextjs.org/ |
+|2| React | https://react.dev/ |
+|3| Typescript | https://www.typescriptlang.org/ |
+|4| Tailwindcss | https://tailwindcss.com/ |
 
 ## How to run this project
 
-1. install semua depedency
+Note : direkomendasikan menggunakan node v.16 
+
+1. Install semua depedency
 ```bash
 npm install
 ```
 2. setelah semua depedency terinstall semua kemudian jalankan perintah
 ```bash
-npm run dev
+npm run dev 
 ```
 3. maka program akan running secara default di port 3000 dan bisa di akses di http://localhost:3000
 
 
-## deploy on heroku
+## Deploy 
+|No| Platform | URl |
+|---| --- | --- |
+|1| Heroku | https://frontend-saepul-elemes.herokuapp.com/ |
+|2| Vercel | https://frontend-saepul-elemes.vercel.app/ |

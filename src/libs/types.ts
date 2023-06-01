@@ -25,12 +25,11 @@ export type TSocialMedia = {
     href : string
 }
 
-type TFloatingBar = {
+export type TFloatingBar = {
     icon:  string
     href: string
     name : string
+    children?: Array<TFloatingBar>
 }
 
-export type TFloatingBarList = Array<{
-    children?: Array<TFloatingBar>,
-} & TFloatingBar >
+export type TFloatingBarList = Array<TFloatingBar>
