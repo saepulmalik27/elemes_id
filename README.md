@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 ## Description
 
-Project ini diperuntukan untuk test frontend id Elemes.id
+Project ini diperuntukan untuk test frontend di Elemes.id
 
 
 ## Tools
