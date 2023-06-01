@@ -1,7 +1,7 @@
 import React from "react";
-
+import cx from "classnames";
 type ButtonProps = {
-  variant?: "primary" | "secondary" | "default";
+  variant?: "primary" | "secondary" | "default" | "primary-shadow";
   children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -18,13 +18,16 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 const generateButtonVariant = (variant: ButtonProps['variant']) => {
+  const defaultVariant = 'text-sm px-[18px] py-[10px] rounded-full font-medium'
     switch (variant) {
         case 'primary':
-        return 'rounded-full bg-olivegreen text-white shadow-sm text-sm px-[18px] py-[10px]'
+        return cx('bg-olivegreen text-white shadow-sm', defaultVariant)
         case 'secondary':
-        return 'rounded-full  bg-stroke shadow-sm text-sm px-[18px] py-[10px]'
+        return cx('bg-stroke shadow-sm', defaultVariant)
+        case 'primary-shadow':
+        return cx('bg-olivegreen shadow-custom text-white', defaultVariant)
         default:
-        return 'text-sm'
+        return 'text-sm font-medium'
     }
 }
 

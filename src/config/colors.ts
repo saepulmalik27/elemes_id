@@ -23,8 +23,13 @@ const colors = {
         light : "#F3F7D9",
         DEFAULT : "#A4B441",
     },
-    stroke : "#f2f2f2"
-
+    stroke : "#f2f2f2",
+    "lightgray" : "#C9C9C9",
+    "tangerine" : "#FF8412",
+    "primary" : "#000000",
+    "secondary" : "#757575",
+    "sizzlingred" : "#E7462D",
 }
+
 
 module.exports = colors

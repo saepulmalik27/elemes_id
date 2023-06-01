@@ -5,7 +5,7 @@ import Button from "../atoms/button";
 const Auth = () => {
   return (
     <div className="flex gap-2">
-      <div className="hidden md:block">
+      <div className="hidden md:flex justify-center items-center">
         <Button>{copytext.header.auth.signin}</Button>
       </div>
 

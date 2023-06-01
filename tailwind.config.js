@@ -25,7 +25,11 @@ module.exports = {
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(250px, 1fr))',
         'auto-fill': 'repeat(auto-fill, minmax(250px, 1fr))',
-      }
+      },
+      boxShadow : {
+        'custom' : '0px 8px 32px rgba(102, 107, 226, 0.35)',
+      },
+      
     },
   },
   plugins: [

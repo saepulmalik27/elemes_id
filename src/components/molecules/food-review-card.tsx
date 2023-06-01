@@ -8,16 +8,16 @@ const FoodReviewCard : React.FC<TFoodRating> = ({color, description, imageUrl, r
   return (
     <div className={getRenderedClassNames(color)} >
         <Image src={imageUrl} width={120} height={120} alt={'food-rating'+title} />
-        <div className='flex flex-col' >
+        <div className='flex flex-col select-none' >
             <h4 className='text-title-1xl' >{title}</h4>
             <p className='text-lg font-medium text-olivegreen'>{description}</p>
         </div>
-        <StarRating/>
+        <StarRating rate={rating} />
     </div>
   )
 }
     const getRenderedClassNames = (color: string) => {
-        const defaultClass = 'rounded-lg flex flex-col gap-4 items-start justify-center md:w-72 md:h-[300px] px-5'
+        const defaultClass = 'rounded-lg flex flex-col gap-4 items-start justify-center md:w-72 md:h-[300px] px-5 py-5'
        switch (color) {
         case "olivegreen":
           return cx('bg-olivegreen-light', defaultClass) 

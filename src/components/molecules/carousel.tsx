@@ -25,10 +25,10 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
           <div className="flex-shrink-0">{child}</div>
         ))}
       </div>
-      <div className="hidden md:flex md:gap-4 md:justify-end md:px-[120px]">
+      <div className="hidden md:flex md:gap-4 md:justify-end px-5 md:px-10 lg:px-[120px]">
         <button
           className={cx(
-            "rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center",
+            "rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center uppercase font-medium",
             showLeftArrow ? "visible" : "invisible"
           )}
           onClick={() => {
@@ -42,7 +42,7 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
         </button>
         <button
           className={cx(
-            "rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center ",
+            "rounded-full bg-olivegreen py-2 px-3 text-white flex gap-1 items-center uppercase font-medium ",
             showRightArrow ? "visible" : "invisible"
           )}
           onClick={() => {

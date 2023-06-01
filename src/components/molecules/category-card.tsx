@@ -13,7 +13,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
   return (
     <div className={getRenderedClassNames(color)}>
       <Image src={imageUrl} width={47} height={47} alt={title} />
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1 select-none">
         <p className="font-medium">{title}</p>
         <p className="text-sm">{description}</p>
       </div>

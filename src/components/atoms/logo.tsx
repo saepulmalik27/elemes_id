@@ -7,7 +7,7 @@ type LogoProps = {
 
 const Logo : React.FC<LogoProps> = ({src}) => {
   return (
-    <Image src={src} width={150} height={36} alt='logo' className='w-fit h-fit cursor-pointer select-none' />
+    <Image src={src} width={150} height={36} alt='logo' className='cursor-pointer select-none' />
   )
 }
 
